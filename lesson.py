@@ -84,15 +84,16 @@ elif Ex == 4:
     print(list)
     # Задание 5
 elif Ex == 5:
-    list = [random.randint(1, 100) for i in range(random.randint(10, 30))]
+    list = [random.randint(1, 100) for i in range(10,30)]
+    total= []
     print(list)
     meanvalue = sum(list) / len(list)
     print("Среднее значение= " + str(meanvalue))
     for i in range(len(list)):
-        total = list.pop()
-        if meanvalue < total:
-            list.append((total))
-    print("числа большие среднего значения списка= " + str(list))
+        tr=list[i]
+        if meanvalue < tr:
+            total.append((tr))
+    print("числа большие среднего значения списка= " + str (total))
     # Задание 6
 elif Ex == 6:
 
